@@ -238,7 +238,7 @@ docker compose exec postgres psql -U receipts -d receipts -c "SELECT ride_id, st
 ## 🔁 See it at work
 
 The simulator books rides the way a phone on a bad network does: every booking gets a new key, roughly every
-third one sends its request and hangs up before the answer, and the client retires it under the same key, backing
+third one sends its request and hangs up before the answer, and the client retries it under the same key, backing
 off, until the answer is definitive.
 
 ```bash
