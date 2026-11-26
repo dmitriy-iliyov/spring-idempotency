@@ -95,7 +95,7 @@ public class RideService {
                 idempotencyKey
         );
         Ride charged = transaction.execute(status -> recordCharge(ride, chargeId));
-        log.info("Ride {} booked and chraged as {}", charged.id(), chargeId);
+        log.info("Ride {} booked and charged as {}", charged.id(), chargeId);
         return RideResponse.from(charged);
     }
 
