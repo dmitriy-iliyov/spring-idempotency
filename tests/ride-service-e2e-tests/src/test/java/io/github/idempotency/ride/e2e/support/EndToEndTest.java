@@ -34,7 +34,7 @@ public abstract class EndToEndTest {
     private static final KafkaContainer KAFKA = new KafkaContainer(DockerImageName.parse("apache/kafka:4.4.0"));
 
     private static final GenericContainer<?> STRIPE_MOCK = new GenericContainer<>(
-            DockerImageName.parse("stripe/stripe-mock:v0.205.0")
+            DockerImageName.parse("stripe/stripe-mock:v0.206.0")
     ).withExposedPorts(12111).waitingFor(Wait.forListeningPort());
 
     static {

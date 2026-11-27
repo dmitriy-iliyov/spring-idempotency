@@ -10,7 +10,7 @@ public final class TestImages {
 
     public static final DockerImageName KAFKA = DockerImageName.parse("apache/kafka:4.4.0");
 
-    public static final DockerImageName STRIPE_MOCK = DockerImageName.parse("stripe/stripe-mock:v0.205.0");
+    public static final DockerImageName STRIPE_MOCK = DockerImageName.parse("stripe/stripe-mock:v0.206.0");
 
     /**
      * The plain HTTP port of stripe-mock; 12112 serves HTTPS with a self-signed certificate.
