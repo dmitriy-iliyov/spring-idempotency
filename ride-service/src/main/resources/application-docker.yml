@@ -1,4 +1,4 @@
-# Inside the compose network: every dependency is reached by the name of its compose servcie.
+# Inside the compose network: every dependency is reached by the name of its compose service.
 spring:
   datasource:
     url: ${RIDE_DB_URL:jdbc:postgresql://postgres:5432/rides}
